@@ -1,0 +1,385 @@
+body {
+    background-color: #f7f7ee;
+}
+
+.header {
+    border-bottom: 2px dashed black;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header a {
+    margin-right: 70px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+img#logo-page {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+}
+
+.register-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 60%;
+    left: 50%;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #fb7813;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.login-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 55%;
+    left: 50%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #fb7813;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.reset-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 55%;
+    left: 50%;
+}
+
+.reset {
+    font-family: "Schoolbell", cursive;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-family: "Schoolbell", cursive;
+}
+
+h2 {
+    font-family: "Schoolbell", cursive;
+    top: 10px;
+    left: 300px;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.error-message {
+    color: red;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.reset-link {
+    font-size: 13px;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    background-color: #17706e;
+    color: #f7f7ee;
+    border: 1px solid #f7f7ee;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+button:active {
+    position: relative;
+    top: 3px;
+}
+
+.profile-pic-container img {
+    height: 50px;
+    padding: 2px;
+    width: 50px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.big-profile-picture img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px dashed black;
+    padding: 5px;
+    background-color: #fb7813;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(136, 136, 136, 0.5);
+    z-index: 10;
+}
+
+.modal-content {
+    position: relative;
+    height: 40%;
+    width: 40%;
+    background-color: #f7f7ee;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    border: 5px solid #fb7813;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fb7813;
+}
+
+.close-modal:active {
+    font-size: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profile h2 {
+    margin: 5px;
+}
+
+img#upload-icon {
+    height: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+img#upload-icon:active {
+    position: relative;
+    top: 3px;
+}
+
+.upload-title {
+    font-family: "Schoolbell", cursive;
+}
+
+.bio-editor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bio-editor textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.recent-users {
+    margin: 10px 0px 10px 20px;
+    position: relative;
+}
+
+.recent-users img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px dashed black;
+    padding: 5px;
+    background-color: #fb7813;
+}
+
+.found-users {
+    margin: 10px 0px 10px 20px;
+    position: relative;
+}
+
+.found-users img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px dashed black;
+    padding: 5px;
+    background-color: #fb7813;
+}
+
+.find-people {
+    text-align: center;
+}
+
+.find-people h3 {
+    font-family: "Schoolbell", cursive;
+}
+
+.find-people input {
+    width: 300px;
+    text-align: center;
+}
+
+.friends-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends-list-container h3 {
+    font-family: "Schoolbell", cursive;
+}
+
+.friends-list-container p {
+    margin: 5px;
+}
+
+.friends-list-container button {
+    margin-top: 0px;
+}
+
+.friends-list-small-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.friend-request-container {
+    display: flex;
+}
+
+.friends-list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+
+.friends-list img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px dashed black;
+    padding: 5px;
+    background-color: #fb7813;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.chat-messages-container {
+    height: 300px;
+    width: 80%;
+    /* to make is scrollable: */
+    overflow-y: scroll;
+    height: 300px;
+    width: 80%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed black;
+    padding: 10px;
+    background-color: white;
+}
+
+textarea {
+    margin-top: 20px;
+    width: 30%;
+    height: 50px;
+}
+
+.chat-messages {
+    display: flex;
+    align-items: center;
+}
+
+.message p {
+    text-decoration: dashed;
+}
+
+.chat-user {
+    display: inline-flex;
+    width: 100px;
+}
+
+.chat-user img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px dashed black;
+    padding: 2px;
+    background-color: #fb7813;
+}
